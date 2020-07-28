@@ -18,8 +18,8 @@ export default class App extends Component {
 
   checkLoginStatus(){
     axios.get(
-      "http://localhost:3002/api/v1/logged_in",
-      // "http://localhost:3002/logged_in",
+      // "http://localhost:3002/api/v1/logged_in",
+      "http://localhost:3002/logged_in",
       { withCredentials: true }
     ).then(response => {
       console.log("Logged in?", response);

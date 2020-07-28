@@ -20,8 +20,8 @@ export default class Login extends Component {
         const { username, password, password_confirmation } = this.state;
 
         axios.post(
-            "http://localhost:3002/api/v1/login",
-            // "http://localhost:3002/sessions",
+            // "http://localhost:3002/api/v1/login",
+            "http://localhost:3002/sessions",
             {
                 user: {
                     username: username,
